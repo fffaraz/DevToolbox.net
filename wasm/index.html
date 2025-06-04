@@ -91,7 +91,7 @@
 							action.innerHTML = "Downloading web assembly file.";
 
 							const go = new Go();
-							WebAssembly.instantiateStreaming(fetch("devtoolbox.wasm"), go.importObject).then((result) => {
+							WebAssembly.instantiateStreaming(fetch("DevToolbox.wasm"), go.importObject).then((result) => {
 								main.innerHTML = "";
 								go.run(result.instance);
 							});
@@ -112,8 +112,8 @@
 			<div class="centered-container">
 			<table class="center">
 				<tr><td><img class="application-icon" src="icon.png" alt="Application icon"/></td></tr>
-				<tr><td><div class="centered-text"><div class="application-name">devtoolbox</div></div></td></tr>
-				<tr><td><div class="centered-text"><div class="application-version">v1.0.2</div></div></td></tr>
+				<tr><td><div class="centered-text"><div class="application-name">DevToolbox</div></div></td></tr>
+				<tr><td><div class="centered-text"><div class="application-version">v1.0.3</div></div></td></tr>
 				<tr>
 					<td>
 						<picture>
